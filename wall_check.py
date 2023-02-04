@@ -20,10 +20,9 @@ def main(position_x, position_y):
     velocity = object_default_speed
     
     print("wall check start")
-    
     # 壁への移動処理.
     while True:
-        position_y += object_default_speed
+        position_y += velocity
         # 壁の末端に到達したら、終了する(ループする関数の処理で組み込む).
         if position_y > wall_end_y_value:
             print("wall hit app end")
